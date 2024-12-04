@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.gap0{
+  height: 0.5rem;
+}
+.gap1 {
+  height: 1rem;
+}
+.gap2{
+  height: 1.5rem;
+}
+main {
+  max-width: 780px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: "Inter", serif;
+  font-weight: 300;
+}
+.main_title {
+  font-size: 2.1rem;
+  font-weight: 400;
+}
+
+.calculator {
+  border: rgba(226, 226, 226, 0.441) solid 1px;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: rgba(7, 194, 236, 0.276);
+}
+
+.flex{
+  display: flex;
+  gap: 5px;
+}
+button {
+  cursor: pointer;
+  font-family: "Inter", serif;
+}
+.btn-edit{
+  padding: 10px 13px;
+  border: rgba(4, 119, 220, 0.187) solid 1px;
+  background-color: rgba(7, 194, 236, 0.514);
+  border-radius: 3px;
+}
+.btn-edit:hover{
+  background-color: rgb(3, 181, 221);
+}
+.input-text{
+  width: 100%;
+  border: none;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  font-family: "Inter", serif;
+}
+.title_question {
+  font-weight: 400;
+}
+.btn_calc {
+  background-color: rgba(2, 233, 217, 0.968);
+  padding: 13px 30px;
+  border-radius: 3px;
+  border: none;
+  color: #434242;
+  font-size: 1.2rem;
+}
+.btn_calc:hover{
+  background-color:rgba(4, 168, 157, 0.968); 
+  transition: 3ms;
+}
+
+.btn_reset {
+  padding: 13px 30px;
+  border-radius: 3px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #fff;
+  text-transform: capitalize;
+}
+.btn_reset:hover{
+  background-color: #0db0c2;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}

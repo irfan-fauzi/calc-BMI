@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <main>
+    <h1 class="main_title">Kalkulator BMI</h1>
+    <div class="gap2"></div>
+    <p class="sub_title">Berat badan ideal adalah impian semua orang, tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan juga menandakan kondisi tubuh yang sehat, bagaimana denganmu ?, Yuk hitung sekarang di kalkulator BMI</p>
+    <div class="gap2"></div>
+    <section class="calculator">
+      <!-- gender -->
+      <div class="gender">
+        <p class="title_question">Jenis kelamin</p>
+        <div class="gap0"></div>
+        <input type="radio" name="jenis_kelamin" id="pria" value="pria">
+        <label for="pria">pria</label>
+        <input type="radio" name="jenis_kelamin" id="wanita" value="wanita">
+        <label for="wanita">wanita</label>
+      </div>
+      <div class="gap1"></div>
+      <!-- berat badan -->
+      <div class="weight">
+        <p class="title_question">Berat badan (Kg)</p>
+        <div class="gap0"></div>
+        <div class="flex">
+          <button class="weight_edit_btn btn-edit"><i class="fa-regular fa-pen-to-square"></i></button>
+          <input type="text" class="input-text" id="weight" name="weight" placeholder="80">
+        </div>
+      </div>
+      <div class="gap1"></div>
+      <!-- usia -->
+      <div class="age">
+        <p class="title_question">Usia (tahun)</p>
+        <div class="gap0"></div>
+        <div class="flex">
+          <button class="age_edit_btn btn-edit"><i class="fa-regular fa-pen-to-square"></i></button>
+          <input type="text" class="input-text" id="age" name="age" placeholder="16">
+        </div>
+      </div>
+      <div class="gap1"></div>
+      <!-- tinggi badan -->
+      <div class="height">
+        <p class="title_question">Tinggi badan (cm)</p>
+        <div class="gap0"></div>
+        <div class="flex">
+          <button class="height_edit_btn btn-edit"><i class="fa-regular fa-pen-to-square"></i></button>
+          <input type="text" class="input-text" id="height" name="height" placeholder="187">
+        </div>
+      </div>
+       <div class="gap2"></div>
+       <div class="btn-wrap">
+        <button class="btn_calc">Hitung BMI ⚖</button>
+        <button class="btn_reset">reset <i class="fa-solid fa-rotate-left"></i></button>
+      </div>
+    </section>
+
+
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
