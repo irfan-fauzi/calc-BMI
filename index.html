@@ -23,7 +23,7 @@
       <div class="gender">
         <p class="title_question">Jenis kelamin</p>
         <div class="gap0"></div>
-        <input type="radio" name="jenis_kelamin" id="pria" value="pria">
+        <input type="radio" name="jenis_kelamin" id="pria" value="pria" >
         <label for="pria">pria</label>
         <input type="radio" name="jenis_kelamin" id="wanita" value="wanita">
         <label for="wanita">wanita</label>
@@ -31,8 +31,9 @@
       <div class="gap1"></div>
       <!-- berat badan -->
       <div class="weight">
-        <p class="title_question">Berat badan (Kg)</p>
+        <p class="title_question">Berat badan (Kg) <span class="warning_weight warning"></span></p>
         <div class="gap0"></div>
+        
         <div class="flex">
           <button class="weight_edit_btn btn-edit"><i class="fa-regular fa-pen-to-square"></i></button>
           <input type="text" class="input-text" id="weight" name="weight" placeholder="80">
@@ -41,7 +42,7 @@
       <div class="gap1"></div>
       <!-- usia -->
       <div class="age">
-        <p class="title_question">Usia (tahun)</p>
+        <p class="title_question">Usia (tahun) <span class="warning_age warning"></span></p>
         <div class="gap0"></div>
         <div class="flex">
           <button class="age_edit_btn btn-edit"><i class="fa-regular fa-pen-to-square"></i></button>
@@ -51,7 +52,7 @@
       <div class="gap1"></div>
       <!-- tinggi badan -->
       <div class="height">
-        <p class="title_question">Tinggi badan (cm)</p>
+        <p class="title_question">Tinggi badan (cm) <span class="warning_height warning"></span></p>
         <div class="gap0"></div>
         <div class="flex">
           <button class="height_edit_btn btn-edit"><i class="fa-regular fa-pen-to-square"></i></button>
@@ -64,9 +65,32 @@
         <button class="btn_reset">reset <i class="fa-solid fa-rotate-left"></i></button>
       </div>
     </section>
+   
+    <!-- <section class="fitur_section">
+      <div class="gap2"></div>
+      <h3>Keunggulan Fitur</h3>
+      <div class="gap1"></div>
+      <ul>
+        <li>1. Mengitung berat badan</li>
+        <li>2. Menentukan kategori berat badan ideal atau tidak</li>
+        <li>3. mempersiapkan program penurunan berat badan</li>
+      </ul>
+      <div class="gap2"></div>
+      <p>kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil / menyusui tidak boleh mengandalkan pembaca BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yng memenuhi syarat seperti dokter</p>
 
+    </section> -->
+    <section class="result_section">
+      <div class="gap2"></div>
+      <h1>Hasil</h1>
+      <div class="result_box">
+        <p id="result_text">Berat badan lebih</p>
+        <p id="result_number"></p>
+        <p>anda memiliki berat badan berlebih</p>
+      </div>
+      <p id="msg"></p>
+    </section>
 
   </main>
-  <script src="index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
